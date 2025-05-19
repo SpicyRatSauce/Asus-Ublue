@@ -1,3 +1,41 @@
 [[customizations.filesystem]]
 mountpoint = "/"
 minsize = "20 GiB"
+
+# Enable COPR repositories
+[[customizations.copr]]
+name = "lukenukem/asus-kernel"
+
+[[customizations.copr]]
+name = "lukenukem/asus-linux"
+
+# Packages to install
+[customizations.packages]
+install = [
+  # NVIDIA open kernel module driver
+  "akmod-nvidia",
+
+  # Replace kernel
+  "kernel-rog-cachyos",
+
+  # ASUS tools
+  "asusctl",
+  "supergfxctl",
+  "power-profiles-daemon",
+
+  # Optional
+  "distrobox",
+  "zsh"
+]
+
+remove = [
+  # Remove stock kernel to avoid conflicts
+  "kernel",
+  "kernel-core",
+  "kernel-modules",
+  "kernel-modules-extra",
+  "kernel-debug",
+  "kernel-debug-core",
+  "kernel-debug-modules",
+  "kernel-debug-modules-extra"
+]
