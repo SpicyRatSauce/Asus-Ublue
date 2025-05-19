@@ -6,8 +6,8 @@ COPY build_files /
 FROM ghcr.io/ublue-os/bazzite:stable
 
 # Enable asus linux services
-RUN systemctl enable supergfxd.service \
-    && systemctl enable asusd.service
+#RUN systemctl enable supergfxd.service \
+#    && systemctl enable asusd.service
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
