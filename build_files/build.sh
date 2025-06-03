@@ -12,6 +12,8 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y tmux 
 
+dnf5 remove -y steam fw-fanctrl
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
