@@ -14,12 +14,6 @@ dnf5 install -y tmux
 
 dnf5 remove -y fw-fanctrl
 
-dnf5 -y copr enable lukenukem/asus-linux
-
-dnf5 -y copr enable lukenukem/asus-kernel
-
-dnf5 install -y asusctl asusctl-rog-gui
-
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
