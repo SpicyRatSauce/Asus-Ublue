@@ -12,7 +12,7 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y tmux 
 
-dnf5 remove -y steam fw-fanctrl
+dnf5 remove -y fw-fanctrl
 
 dnf5 -y copr enable lukenukem/asus-linux
 
