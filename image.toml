@@ -1,7 +1,3 @@
-[builder]
-distro = "fedora"
-releasever = "42"
-
 [[customizations.filesystem]]
 mountpoint = "/"
 minsize = "20 GiB"
